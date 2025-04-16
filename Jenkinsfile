@@ -4,9 +4,9 @@ pipeline {
     stage('print info of server') {
       steps {
         sh"""
-        echo $JOB_NAME
-        echo $BUILD_ID
-        ehco $HOSTNAME
+        echo ${env.JOB_NAME}
+        echo ${env.BUILD_ID}
+        hostname
         pwd 
         uptime
         whoami
