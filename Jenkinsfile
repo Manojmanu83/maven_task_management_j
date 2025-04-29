@@ -10,7 +10,7 @@ pipeline {
         echo ${env.JOB_NAME}
         echo ${env.BUILD_ID}
         echo $JOB_NAME
-        hostname
+        echo $HOSTNAME
         pwd 
         uptime
         whoami
