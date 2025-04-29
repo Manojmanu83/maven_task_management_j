@@ -1,7 +1,8 @@
 pipeline {
-  agent {
-    label 'java_slave_node'
-  }
+  agent any
+  // agent {
+  //   label 'java_slave_node'
+  // }
   stages {
     stage('print info of server') {
       steps {
