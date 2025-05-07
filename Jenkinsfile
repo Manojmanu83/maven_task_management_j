@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Prep build') {
             steps {
-                sh 'mvn clean package' 
+                sh 'mvn clean deploy -s Settings.xml' 
             }
         }
     }
